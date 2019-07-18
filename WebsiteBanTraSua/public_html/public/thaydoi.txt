@@ -1,0 +1,55 @@
+﻿đặt cái giỏ hàng thêm 2 id, doiSo = đối số nhỏ, doiGia
+	<div class="col-sm-6">
+                    <div class="shopping-item">
+                        <a href="cart.html">Giỏ hàng - <span class="cart-amunt" id="doiGia">0đ</span> <i class="fa fa-shopping-cart"></i> <span class="product-count" id = "doiSo">0</span></a>
+                    </div>
+                </div>
+
+------
+
+xóa bớt thông tin của 1 loại trà sữa
+
+<div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/trabidaokemsua.png" alt="">
+                        </div>
+                        <h2><a href="single-product.html">Trà Bí Đao Kem Sữa</a></h2>
+                        <div class="product-carousel-price">
+                           <ins>45,000đ</ins> <del>60,000đ</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <button value = "45000" class="add_to_cart_button">Thêm vào giỏ</button>
+                        </div>                       
+                    </div>
+                </div>
+
+-----------
+
+script jquery + sessionStorage
+
+ <script>
+        $(':button').click(function() {
+            if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.pricecount){
+                sessionStorage.pricecount = Number(sessionStorage.pricecount) + Number($(this).val());
+            }
+            else{
+                sessionStorage.pricecount = Number($(this).val());
+            }
+                document.getElementById("doiGia").innerHTML = sessionStorage.pricecount + "đ";
+            if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                } else {
+            sessionStorage.clickcount = 1;
+                }
+                document.getElementById("doiSo").innerHTML = sessionStorage.clickcount;
+            }
+        });
+        
+
+        
+
+
+    </script>

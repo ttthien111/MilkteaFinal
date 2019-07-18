@@ -1,0 +1,41 @@
+body{
+            position: relative;
+        }
+        .img-product-fly{
+            position: absolute;
+            z-index: 999999;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 1px solid grey;
+            transition: all 1s ease;
+        }
+
+.section-title,.product-wid-title,.footer-wid-title,.single-shop-product, .product-inner-price{
+            font-family: 'segoe ui light' ,sans-serif;
+            color: grey;
+        }
+        h2{
+            text-align: center;
+
+        }
+        ins,del,.product-option-shop{
+            margin-left: 22%;
+        }
+        .luachon{
+            position:absolute;
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            top:-2px;
+            left :50px;
+        }
+
+.table{
+   color: white;
+}
+.avatar-form table,td{
+    margin-left: 10%;
+
+}

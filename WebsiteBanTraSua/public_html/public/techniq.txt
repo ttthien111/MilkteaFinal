@@ -1,0 +1,1 @@
+﻿chỉnh sửa prev, next: vào owl.carousel.min.js tìm navText sửa
